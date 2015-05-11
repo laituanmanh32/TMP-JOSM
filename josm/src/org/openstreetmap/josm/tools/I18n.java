@@ -400,45 +400,46 @@ public final class I18n {
         Utils.updateSystemProperty("java.locale.providers", "JRE,CLDR");
 
         //languages.put("ar", PluralMode.MODE_AR);
-        languages.put("ast", PluralMode.MODE_NOTONE);
-        languages.put("bg", PluralMode.MODE_NOTONE);
-        languages.put("ca", PluralMode.MODE_NOTONE);
-        languages.put("ca@valencia", PluralMode.MODE_NOTONE);
-        languages.put("cs", PluralMode.MODE_CS);
-        languages.put("da", PluralMode.MODE_NOTONE);
-        languages.put("de", PluralMode.MODE_NOTONE);
+//        languages.put("ast", PluralMode.MODE_NOTONE);
+//        languages.put("bg", PluralMode.MODE_NOTONE);
+//        languages.put("ca", PluralMode.MODE_NOTONE);
+//        languages.put("ca@valencia", PluralMode.MODE_NOTONE);
+//        languages.put("cs", PluralMode.MODE_CS);
+//        languages.put("da", PluralMode.MODE_NOTONE);
+//        languages.put("de", PluralMode.MODE_NOTONE);
         languages.put("el", PluralMode.MODE_NOTONE);
-        languages.put("en_AU", PluralMode.MODE_NOTONE);
-        languages.put("en_GB", PluralMode.MODE_NOTONE);
-        languages.put("es", PluralMode.MODE_NOTONE);
-        languages.put("et", PluralMode.MODE_NOTONE);
-        //languages.put("eu", PluralMode.MODE_NOTONE);
-        languages.put("fi", PluralMode.MODE_NOTONE);
-        languages.put("fr", PluralMode.MODE_GREATERONE);
-        languages.put("gl", PluralMode.MODE_NOTONE);
-        //languages.put("he", PluralMode.MODE_NOTONE);
-        languages.put("hu", PluralMode.MODE_NOTONE);
-        languages.put("id", PluralMode.MODE_NONE);
-        //languages.put("is", PluralMode.MODE_NOTONE);
-        languages.put("it", PluralMode.MODE_NOTONE);
-        languages.put("ja", PluralMode.MODE_NONE);
-        // fully supported only with Java 8 and later (needs CLDR)
-        languages.put("km", PluralMode.MODE_NONE);
-        languages.put("lt", PluralMode.MODE_LT);
-        //languages.put("nb", PluralMode.MODE_NOTONE);
-        languages.put("nl", PluralMode.MODE_NOTONE);
-        languages.put("pl", PluralMode.MODE_PL);
-        languages.put("pt", PluralMode.MODE_NOTONE);
-        languages.put("pt_BR", PluralMode.MODE_GREATERONE);
-        //languages.put("ro", PluralMode.MODE_RO);
-        languages.put("ru", PluralMode.MODE_RU);
-        languages.put("sk", PluralMode.MODE_SK);
-        //languages.put("sl", PluralMode.MODE_SL);
-        languages.put("sv", PluralMode.MODE_NOTONE);
-        //languages.put("tr", PluralMode.MODE_NONE);
-        languages.put("uk", PluralMode.MODE_RU);
-        languages.put("zh_CN", PluralMode.MODE_NONE);
-        languages.put("zh_TW", PluralMode.MODE_NONE);
+//        languages.put("en_AU", PluralMode.MODE_NOTONE);
+//        languages.put("en_GB", PluralMode.MODE_NOTONE);
+//        languages.put("es", PluralMode.MODE_NOTONE);
+//        languages.put("et", PluralMode.MODE_NOTONE);
+//        //languages.put("eu", PluralMode.MODE_NOTONE);
+//        languages.put("fi", PluralMode.MODE_NOTONE);
+//        languages.put("fr", PluralMode.MODE_GREATERONE);
+//        languages.put("gl", PluralMode.MODE_NOTONE);
+//        //languages.put("he", PluralMode.MODE_NOTONE);
+//        languages.put("hu", PluralMode.MODE_NOTONE);
+//        languages.put("id", PluralMode.MODE_NONE);
+//        //languages.put("is", PluralMode.MODE_NOTONE);
+//        languages.put("it", PluralMode.MODE_NOTONE);
+//        languages.put("ja", PluralMode.MODE_NONE);
+//        // fully supported only with Java 8 and later (needs CLDR)
+//        languages.put("km", PluralMode.MODE_NONE);
+//        languages.put("lt", PluralMode.MODE_LT);
+//        //languages.put("nb", PluralMode.MODE_NOTONE);
+//        languages.put("nl", PluralMode.MODE_NOTONE);
+//        languages.put("pl", PluralMode.MODE_PL);
+//        languages.put("pt", PluralMode.MODE_NOTONE);
+//        languages.put("pt_BR", PluralMode.MODE_GREATERONE);
+//        //languages.put("ro", PluralMode.MODE_RO);
+//        languages.put("ru", PluralMode.MODE_RU);
+//        languages.put("sk", PluralMode.MODE_SK);
+//        //languages.put("sl", PluralMode.MODE_SL);
+//        languages.put("sv", PluralMode.MODE_NOTONE);
+//        //languages.put("tr", PluralMode.MODE_NONE);
+//        languages.put("uk", PluralMode.MODE_RU);
+//        languages.put("zh_CN", PluralMode.MODE_NONE);
+//        languages.put("zh_TW", PluralMode.MODE_NONE);
+        languages.put("vi", PluralMode.MODE_NOTONE);
 
         /* try initial language settings, may be changed later again */
         if(!load(LanguageInfo.getJOSMLocaleCode())) {
@@ -447,6 +448,7 @@ public final class I18n {
     }
 
     public static void addTexts(File source) {
+        Main.info(loadedCode);
         if ("en".equals(loadedCode))
             return;
         String enfile = "data/en.lang";
@@ -477,7 +479,7 @@ public final class I18n {
                         load(jar, jarTrans, true);
                 }
             }
-        } catch (IOException e) {
+        } catch (I Unable to find translationOException e) {
             // Ignore
         }
     }
