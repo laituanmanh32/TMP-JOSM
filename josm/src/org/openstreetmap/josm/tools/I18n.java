@@ -439,7 +439,7 @@ public final class I18n {
 //        languages.put("uk", PluralMode.MODE_RU);
 //        languages.put("zh_CN", PluralMode.MODE_NONE);
 //        languages.put("zh_TW", PluralMode.MODE_NONE);
-        languages.put("vi", PluralMode.MODE_NOTONE);
+        languages.put("vi", PluralMode.MODE_NONE);
 
         /* try initial language settings, may be changed later again */
         if(!load(LanguageInfo.getJOSMLocaleCode())) {
@@ -479,7 +479,7 @@ public final class I18n {
                         load(jar, jarTrans, true);
                 }
             }
-        } catch (I Unable to find translationOException e) {
+        } catch (IOException e) {
             // Ignore
         }
     }
@@ -599,6 +599,7 @@ public final class I18n {
                     int trval = trs.read(trlen);
                     if(enval != trval) /* files do not match */
                         return false;
+//                        continue;
                     if(enval == -1) {
                         break;
                     }
@@ -612,6 +613,8 @@ public final class I18n {
                         multimode = true;
                         if(trval != 0xFFFF) /* files do not match */
                             return false;
+//                            break;
+//                            continue;
                     } else {
                         if (enval > str.length) {
                             str = new byte[enval];
@@ -627,6 +630,8 @@ public final class I18n {
                             val = trs.read(str, 0, trval);
                             if(val != trval) /* file corrupt */
                                 return false;
+//                                break;
+//                                continue;
                             String trstr = new String(str, 0, trval, StandardCharsets.UTF_8);
                             if(!s.containsKey(enstr))
                                 s.put(enstr, trstr);
@@ -637,6 +642,7 @@ public final class I18n {
         } catch (IOException e) {
             return false;
         }
+        Main.info("Reach here");
         if (!s.isEmpty()) {
             strings = s;
             pstrings = p;

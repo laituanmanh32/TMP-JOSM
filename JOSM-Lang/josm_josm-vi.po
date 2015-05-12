@@ -626,7 +626,6 @@ msgid ""
 "<html>There are no layers the source layer<br>''{0}''<br>could be merged "
 "to.</html>"
 msgstr ""
-"<html>Không có layer nguồn nào <br>''{0}''<br>được merged vào.</html>"
 
 #: ../core/src/org/openstreetmap/josm/actions/AbstractMergeAction.java:83
 msgid "No target layers"
@@ -1945,6 +1944,7 @@ msgstr "Mở tập tin"
 msgid "Cannot open {0} file with the file importer ''{1}''."
 msgid_plural "Cannot open {0} files with the file importer ''{1}''."
 msgstr[0] "Không có thể mở {0} tập tin dùng trình nhập tập tin ''{1}''."
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/actions/OpenFileAction.java:189
 #, java-format
@@ -1979,6 +1979,7 @@ msgstr "Mở tập tin"
 msgid "Opening {0} file..."
 msgid_plural "Opening {0} files..."
 msgstr[0] "Đang mở {0} tập tin…"
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/actions/OpenFileAction.java:338
 #: ../plugins/sds/src/org/openstreetmap/hot/sds/SdsLoadAction.java:78
@@ -2626,6 +2627,7 @@ msgstr "Các nốt được chọn không có chung đường"
 msgid "The selected node is not in the middle of any way."
 msgid_plural "The selected nodes are not in the middle of any way."
 msgstr[0] "Lựa chọn nốt không ở giữa của bất kỳ đường nào cả."
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/actions/SplitWayAction.java:169
 #: ../core/src/org/openstreetmap/josm/actions/UnJoinNodeWayAction.java:67
@@ -2638,6 +2640,7 @@ msgid_plural ""
 "way also."
 msgstr[0] ""
 "Có nhiều hơn 1 đường đang sử dụng nốt bạn chọn. Xin hãy chọn đường."
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/actions/SplitWayAction.java:302
 #: ../core/src/org/openstreetmap/josm/actions/SplitWayAction.java:316
@@ -3520,6 +3523,7 @@ msgstr "Chọn nốt tại bị trí trỏ chuột"
 msgid "Insert new node into way."
 msgid_plural "Insert new node into {0} ways."
 msgstr[0] "Chèn nốt mới tạo vào {0} đường"
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/actions/mapmode/DrawAction.java:1187
 msgid "Start new way from last node."
@@ -3826,6 +3830,7 @@ msgstr ""
 msgid "Add and move a virtual new node to way"
 msgid_plural "Add and move a virtual new node to {0} ways"
 msgstr[0] "Thêm và di chuyển một nốt ảo mới đến {0} đường."
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/actions/mapmode/ZoomAction.java:44
 #: ../core/src/org/openstreetmap/josm/actions/mapmode/ZoomAction.java:45
@@ -4415,15 +4420,12 @@ msgstr ""
 
 #: ../core/src/org/openstreetmap/josm/actions/search/SearchCompiler.java:584
 msgid "Key cannot be empty when tag operator is used. Sample use: key=value"
-msgstr ""
-"Khóa không thể bị trống khi tác tử thẻ được dùng. Ví dụ: khóa=giá trị"
+msgstr "Khóa không thể bị trống khi tác tử thẻ được dùng. Ví dụ: khóa=giá trị"
 
 #: ../core/src/org/openstreetmap/josm/actions/search/SearchCompiler.java:768
 #, java-format
 msgid "Unknown primitive type: {0}. Allowed values are node, way or relation"
 msgstr ""
-"Kiểu đối tượng không rõ:{0}. Các giá trị được phép dùng là nốt, đường và "
-"quan hệ"
 
 #: ../core/src/org/openstreetmap/josm/actions/search/SearchCompiler.java:844
 msgid "Positive integer expected"
@@ -4702,6 +4704,7 @@ msgstr ""
 msgid "object"
 msgid_plural "objects"
 msgstr[0] "đối tượng"
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/command/ChangeRelationMemberRoleCommand.java:74
 #, java-format
@@ -5427,6 +5430,7 @@ msgstr ""
 msgid "node"
 msgid_plural "nodes"
 msgstr[0] "nốt"
+msgstr[1] ""
 
 #. ICON(data/)
 #. light cyan
@@ -5436,6 +5440,7 @@ msgstr[0] "nốt"
 msgid "way"
 msgid_plural "ways"
 msgstr[0] "đường"
+msgstr[1] ""
 
 #. ICON(data/)
 #. dark blue
@@ -5447,6 +5452,7 @@ msgstr[0] "đường"
 msgid "relation"
 msgid_plural "relations"
 msgstr[0] "quan hệ"
+msgstr[1] ""
 
 #. only for display, no real type
 #. ICON(data/)
@@ -7061,6 +7067,7 @@ msgstr "sử dụng đất"
 msgid "{0} node"
 msgid_plural "{0} nodes"
 msgstr[0] "{0} nốt"
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/gui/DefaultNameFormatter.java:335
 #: ../core/src/org/openstreetmap/josm/gui/DefaultNameFormatter.java:675
@@ -7068,6 +7075,7 @@ msgstr[0] "{0} nốt"
 msgid "{0} member"
 msgid_plural "{0} members"
 msgstr[0] "{0} thành phần"
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/gui/DefaultNameFormatter.java:429
 msgid "public transport"
@@ -7161,6 +7169,7 @@ msgstr ""
 msgid "Object deleted"
 msgid_plural "Objects deleted"
 msgstr[0] "Đối tượng đã bị xóa"
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/gui/ExtendedDialog.java:647
 #: ../core/src/org/openstreetmap/josm/gui/HelpAwareOptionPane.java:172
@@ -12734,13 +12743,6 @@ msgid ""
 "server.<br>Click <strong>{6}</strong> to abort and continue "
 "editing.<br></html>"
 msgstr ""
-"<html> Upload <strong>thất bại</strong> do máy chủ có một phiên bản mới hơn "
-"so với số nốt, đường và quan hệ của bạn.<br> Xung đột gây ra do "
-"<strong>{0}</strong> với id <strong>{1}</strong>,<br> máy chủ có phiên bản "
-"{2}, phiên bản của bạn là {3}.<br><br>Chọn <strong>{4}</strong> để đồng bộ "
-"hóa các đối tượng bị xung đột .<br>Chọn <strong>{5}</strong> để đồng bộ hóa "
-"toàn bộ dữ liệu trên máy với máy chủ.<br>Chọn <strong>{6}</strong> để thoát "
-"và tiếp tục chỉnh sửa<br></html>"
 
 #: ../core/src/org/openstreetmap/josm/gui/io/AbstractUploadTask.java:167
 #, java-format
@@ -13059,6 +13061,7 @@ msgstr ""
 msgid "Object could not be downloaded"
 msgid_plural "Some objects could not be downloaded"
 msgstr[0] "Đối tượng không thể tải về được"
+msgstr[1] ""
 
 #: ../core/src/org/openstreetmap/josm/gui/io/DownloadPrimitivesWithReferrersTask.java:144
 #, java-format
@@ -19122,8 +19125,6 @@ msgid ""
 "Error while exporting {0}:\n"
 "{1}"
 msgstr ""
-"Có lỗi trong khi xuất {0}:\n"
-"{1}"
 
 #: ../core/src/org/openstreetmap/josm/io/GpxExporter.java:292
 msgid "Choose a predefined license"
@@ -47071,6 +47072,7 @@ msgstr ""
 msgid "The selected way does not contain the selected node."
 msgid_plural "The selected way does not contain all the selected nodes."
 msgstr[0] "Đường được chọn không chứa nốt được chọn"
+msgstr[1] ""
 
 #: ../plugins/utilsplugin2/src/org/openstreetmap/josm/plugins/utilsplugin2/actions/SplitObjectAction.java:161
 msgid ""

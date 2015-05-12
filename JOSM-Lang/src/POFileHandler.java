@@ -39,8 +39,6 @@ public final class POFileHandler {
 			} else {
 				newline = br.readLine();
 			}
-			System.out.println(newline);
-			System.out.flush();
 		}
 
 		System.out.println(msgidList.get(1));
@@ -116,6 +114,7 @@ public final class POFileHandler {
 				for(String line : msgstr){
 					pw.println(line);
 				}
+//				pw.println(msgstr);
 				pw.flush();
 
 			} else {
